@@ -30,7 +30,6 @@ kamenElm.forEach(kamen => {
 });
 
 const keyboard = (event) => {
-    //console.log(event);
     const number = event.code;
     console.log('Event.code: ' + event.code);
     console.log('Number.slice: ' + number.slice(7));
@@ -53,19 +52,6 @@ const keyboard = (event) => {
             kamen.classList.add('zatreseni');
         });
     }
-
-    /*
-    if (event.code === 'Numpad' + number.slice(6)) {
-        const zvuk = new Audio('tony/' + character + '.mp3');
-        zvuk.play();
-    }
-    */
-
-    /*if (event.code === 'Numpad' + number.slice(6)) {
-        const zvuk = new Audio('tony/D.mp3');
-        zvuk.play();
-    }
-    */
 }
 
 document.addEventListener('keydown', keyboard);
