@@ -23,8 +23,7 @@ kamenElm.forEach(kamen => {
 });
 
 kamenElm.forEach(kamen => {
-    kamen.addEventListener('animationend', (event) => 
-    {
+    kamen.addEventListener('animationend', (event) => {
         event.target.classList.remove('zatreseni');
    })
 });
@@ -38,7 +37,7 @@ const keyboard = (event) => {
     if(number.slice(0,6) === 'Numpad') {
         const index = Number(number.slice(6)) - 1;
         console.log('Index: ' + index);
-        
+
         if (index >= 0 && index < kamenElm.length) {
             const kamen = kamenElm[index];
             console.log('Kamen');
@@ -50,6 +49,7 @@ const keyboard = (event) => {
         kamenElm.forEach(kamen => {
             kamen.click();
             kamen.classList.add('zatreseni');
+            h1Elm.innerHTML = 'Error';
         });
     }
 }
