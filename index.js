@@ -45,6 +45,15 @@ const keyboard = (event) => {
             console.log('Kamen');
             console.log(kamen);
             kamen.click();
+            
+            /*
+            let styl = document.styleSheets[0].cssRules[5].style;
+            console.log(styl);
+            styl.removeProperty('animation');
+            const newZatres = `zatres 200ms`;
+            styl.setProperty('animation', newZatres);
+            */
+
             kamen.classList.add('zatreseni');
         }
     } else {
